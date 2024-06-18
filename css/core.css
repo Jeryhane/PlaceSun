@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Urbanist", sans-serif;
+}
+
+header{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+}
+
+.logo{
+    width: 80px;
+}
+
+.nome{
+    font-weight: 700;
+    font-size: larger;
+}
+
+#spnLogoNome{
+    width: 33.33%;
+}
+#lnkLogo{
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+}
+nav{
+    width: 33.33%;
+    justify-content: space-around;
+    display: inline-flex;
+    font-weight: 700;
+}
+nav a{
+    
+    color: #fff
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+#spnBtnsLogin{
+    width: 33.33%;
+    text-align: end;
+    padding-right: 3%;
+}
+
+
+input:not([type='checkbox']), select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:not([type='checkbox']):focus {
+    outline: none;
+}
+button{
+    padding: 2% 5%;
+    color: #fff;
+    background-color: #005F15;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+#btnCadastrar{
+    background-color: rgba(255, 255, 255, 0);
+}
+#btnEntrar{
+    color: #000;
+    background-color: #fff;
+}
+footer{
+    background-color: #005F15;
+    height: 400px;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}

@@ -1,0 +1,51 @@
+nav a{
+    text-decoration: none;
+    color: #000!important;
+}
+button{
+    color: #000;
+}
+
+#btnEntrar{
+    color: #fff;
+    background-color: #000;
+}
+
+#sessionTitulo{
+    font-size: xxx-large;
+    font-weight: 700;
+    text-align: center;
+    padding: 12% 28%;
+}
+#sessionLugar{
+    font-size: xx-large;
+    font-weight: 700;
+    padding: 1% 6%;
+}
+
+#sessionDescricao{
+    padding: 0 6%;
+}
+#sessionFormulario{
+    padding: 3% 6% 3% 10%;
+    display: flex;
+}
+.cardImage{
+    background-color: #ccc;
+    padding: 5%;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    align-content: center;
+
+}
+#forms{
+    width: 70%;
+}
+
+#formsCampos div{
+    width: 60%;
+    margin: 2% 5%;
+    box-sizing: border-box;
+}
