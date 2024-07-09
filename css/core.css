@@ -1,3 +1,33 @@
+@media screen and (max-width: 600px){
+    header #spnBtnsLogin{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .dropdown{
+        display: block!important;
+    }
+    #drop{
+        display: block!important;
+    }
+    #sessionLugar{
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 601px){
+    nav{
+        display: inline-flex;
+    }
+    #drop{
+        display: none!important;
+    }
+    #sessionLugar{
+        font-size: xx-large;
+    }
+}
+    
 *{
     margin:0;
     padding: 0;
@@ -10,6 +40,7 @@ header{
     align-items: center;
     width: 100%;
     position: absolute;
+    z-index: 999;
 }
 
 .logo{
@@ -32,7 +63,6 @@ header{
 nav{
     width: 33.33%;
     justify-content: space-around;
-    display: inline-flex;
     font-weight: 700;
 }
 nav a{
@@ -51,18 +81,18 @@ a{
 
 
 input:not([type='checkbox']), select {
-    width: 100%;
+    width: -webkit-fill-available;
     padding: 12px 20px;
     margin: 0 5%;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     box-sizing: border-box;
 }
 input:not([type='checkbox']):focus {
     outline: none;
 }
 button{
-    padding: 2% 5%;
+    padding: 12px 30px;
     color: #fff;
     background-color: #005F15;
     border: 0;
@@ -83,4 +113,60 @@ footer{
     text-align: center;
     align-content: center;
     width: 100%;
+}
+#sessionLugar{
+    font-weight: 700;
+    padding: 1% 6%;
+}
+
+#sessionDescricao{
+    padding: 0 6%;
+}
+
+/*nav a:hover{
+    /*background-color: white;
+    color:#005F15;
+    width: max-content;
+}*/
+
+.dropdown {
+    overflow: hidden;
+    display: inline;
+
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 16px;
+    background-color: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block!important;
+    text-align: left;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+#itensDrop a:hover{
+    background-color: #ccc;
 }

@@ -1,3 +1,30 @@
+@media screen and (max-width: 600px){
+
+    #sessionFormulario{
+        flex-wrap: wrap;
+    }
+    
+    #sessionTitulo{
+        font-size: xx-large;
+        font-weight: 700;
+        text-align: center;
+        padding: 28% 12%;
+    }
+    #formsCampos div{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 601px){
+    
+    #sessionTitulo{
+        font-size: xxx-large;
+        font-weight: 700;
+        text-align: center;
+        padding: 12% 28%;
+    }
+
+
+}
 nav a{
     text-decoration: none;
     color: #000!important;
@@ -11,41 +38,43 @@ button{
     background-color: #000;
 }
 
-#sessionTitulo{
-    font-size: xxx-large;
-    font-weight: 700;
-    text-align: center;
-    padding: 12% 28%;
-}
-#sessionLugar{
-    font-size: xx-large;
-    font-weight: 700;
-    padding: 1% 6%;
-}
-
-#sessionDescricao{
-    padding: 0 6%;
-}
 #sessionFormulario{
     padding: 3% 6% 3% 10%;
     display: flex;
+    justify-content: center;
 }
 .cardImage{
     background-color: #ccc;
-    padding: 5%;
     border-radius: 20px;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: -webkit-fill-available;
+    height: 325PX;
     align-content: center;
-
+    margin: 20px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.cardImage:hover{
+    cursor: pointer;
 }
 #forms{
     width: 70%;
 }
 
 #formsCampos div{
-    width: 60%;
     margin: 2% 5%;
     box-sizing: border-box;
+}
+#inputData{
+    width: 130px;
+}
+#btnEnviar{
+    color: #fff;
+}
+
+#sessionBtnEnviar{
+    text-align: center;
+    padding: 0 0 5% 0;
+
 }

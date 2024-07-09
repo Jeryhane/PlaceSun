@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceSun</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/campo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/scrip.js"></script>
+    <!--<script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">-->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <span id="spnLogoNome">
+            <a  href="../index.html" id="lnkLogo">
+                <img class="logo" src="../img/logo.png" alt="">
+                <label class="nome">PlaceSun</label>    
+            </a>
+        </span>
+        <div id="drop" class="dropdown" onmouseenter="positionDropdown()">
+            <button class="dropbtn" >
+                <span id="burguer"class="material-symbols-outlined">menu </span>
+            </button>
+            <div id="itensDrop" class="dropdown-content">
+                <a href="campo.html">Campo</a>
+                <a href="cidade.html">Cidade</a>
+                <a href="natureza.html">Natureza</a>
+                <a href="contato.html">Contato</a>
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
+        <nav>
+            <a href="../html/campo.html">Campo</a>
+            <a href="../html/cidade.html">Cidade</a>
+            <a href="../html/natureza.html">Natureza</a>
+            <a href="../html/contato.html">Contato</a>
+        </nav>
+        <span id="spnBtnsLogin">
+            <button id="btnCadastrar">Sign Up</button>
+            <button id="btnEntrar">Login</button>
+        </span>
+    </header>
+    <article>
+        <div id="sessionCapa">
+            <span class="imgCapa" id="imgCapaNatureza">
+                <span class="txtCapa">NATUREZA</span>
+            </span>
+        </div>
+        <div id="sessionTituloLugar">Natureza</div>
+        <div id="sessionInicioLugar">
+            <div id="sessionDescricao">Os lugares mais naturais são refúgios de beleza intocada, onde a mãe natureza se exibe em todo o seu esplendor. Esses destinos oferecem uma escapada serena da agitação da vida urbana, proporcionando aos visitantes uma oportunidade de se reconectar com o mundo natural e desfrutar de sua tranquilidade e biodiversidade.</div>
+            <input type="text" name="" id="inputPesquisaCidade" placeholder="Busque por uma cidade">
+        </div>
+        <div id="sessionTituloListagem">
+            <span>
+                <div id="sessionLugar">Os melhores lugares para você</div>
+                <div id="sessionDescricao">Os aventureiros querem saber mais histórias desses lugares!</div>
+                
+            </span>
+            <span id="spnBtnsLogin">
+                <a href="contato.html">
+                    <button id="btnEntrarContato">
+                        <span class="material-symbols-outlined" style="width: fit-content;font-size: 16px;">
+                        edit
+                        </span>
+                        Escreva uma avaliação
+                    </button>
+                </a>
+            </span>    
+        </div>
+        <div id="sessionListagem">
+            <!--<div id="itemLista">
+                <span id="itemImage">
+                    <img>
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"></label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao   "></div>
+                </span>
+            </div>-->
+            <div id="itemLista" class="campo mairipora">
+                <span id="itemImage">
+                    <img src="../img/lugares/cachoeira_pedra_lisa.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">São Paulo - SP, Brasil</label>
+                    <h5 id="itemNome">Praia do Curral</h5>
+                    <p id="itemDescricao">Localizada na ilha de Ilhabela, no litoral norte de São Paulo, a Praia do Curral é famosa por sua atmosfera animada e suas águas cristalinas. Com uma faixa de areia larga e cercada por vegetação tropical, é um destino popular para turistas e moradores locais. A praia oferece uma variedade de bares, restaurantes e atividades aquáticas, como mergulho e passeios de barco, tornando-a um local vibrante e emocionante para se visitar.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo mairipora">
+                <span id="itemImage">
+                    <img src="../img/lugares/cachoeira_pedra_lisa.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Mairiporã, Brasil</label>
+                    <h5 id="itemNome">Cachoeira da Pedra Lisa</h5>
+                    <p id="itemDescricao">Localizada na cidade de Mairiporã, a Cachoeira da Pedra Lisa é uma das mais famosas da região metropolitana de São Paulo. Com aproximadamente 20 metros de altura, suas águas cristalinas formam uma piscina natural convidativa para banho. O acesso à cachoeira envolve uma trilha de nível fácil a moderado, proporcionando uma experiência de contato com a natureza antes de chegar ao seu destino refrescante.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo mairipora">
+                <span id="itemImage">
+                    <img src="../img/lugares/cachoeira_pedra_lisa.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Mairiporã, Brasil</label>
+                    <h5 id="itemNome">Cachoeira da Pedra Lisa</h5>
+                    <p id="itemDescricao">Localizada na cidade de Mairiporã, a Cachoeira da Pedra Lisa é uma das mais famosas da região metropolitana de São Paulo. Com aproximadamente 20 metros de altura, suas águas cristalinas formam uma piscina natural convidativa para banho. O acesso à cachoeira envolve uma trilha de nível fácil a moderado, proporcionando uma experiência de contato com a natureza antes de chegar ao seu destino refrescante.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div id="sessionNumPage"></div>
+    </article>
+    <footer>
+        <div>
+            <div class="nome">PlaceSun</div>
+            <img class="logo" src="../img/logo.png" alt="">
+        </div>
+        <div style="color: #fff;">© 2024 PlaceSun. Todos os direitos reservados.</div>
+    </footer>
+</body>
+</html>

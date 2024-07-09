@@ -25,6 +25,19 @@
                 <label class="nome">PlaceSun</label>    
             </a>
         </span>
+        <div id="drop" class="dropdown" onmouseenter="positionDropdown()">
+            <button class="dropbtn" >
+                <span id="burguer"class="material-symbols-outlined">menu </span>
+            </button>
+            <div id="itensDrop" class="dropdown-content">
+                <a href="campo.html">Campo</a>
+                <a href="cidade.html">Cidade</a>
+                <a href="natureza.html">Natureza</a>
+                <a href="contato.html">Contato</a>
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
         <nav>
             <a href="campo.html">Campo</a>
             <a href="cidade.html">Cidade</a>
@@ -43,9 +56,11 @@
         <div id="sessionFormulario">
             <div class="cardImage">
                 <div class="containerInsertImage">
-                    <span class="material-symbols-outlined" style="font-size: xxx-large;"> add_a_photo </span>
+                    <input id="inputImageForm" type="image" src="" alt="" style="display: none;">
+                    <span id="iconImageForm" class="material-symbols-outlined" style="font-size: xxx-large;"> add_a_photo </span>
                 </div>
             </div>
+            <input type="file" id="uploadFiles" name="avatar" accept="image/png, image/jpeg" style="display: none;" onchange="onFileSelected(event)"/>
             <div class="forms">
                 <div id="formsCampos">
                     <div>Nome</div>
@@ -55,7 +70,7 @@
                     <div>Localização</div>
                     <input type="text" name="" id="inputLocal" placeholder="Insira a localização">
                     <div>Data da visita</div>
-                    <input type="text" name="" id="inputData" placeholder="DD/MM/AAAA">
+                    <input type="text" name="" id="inputData" placeholder="DD/MM/AAAA" masc="data">
                     <div>
                         <input type="checkbox" name="" id="ckxConfirmacao" placeholder="Digite seu email">
                         <label>Certifico que as informações nesta análise são baseadas exclusivamente em minhas próprias experiências com o produto ou serviço em questão. Atesto também que não tenho nenhuma afiliação pessoal ou profissional com a empresa em questão e não recebi nenhum incentivo ou pagamento da empresa para escrever esta avaliação. </label>
@@ -64,7 +79,9 @@
                 </div>
             </div>
         </div>
-        <button id="btnEnviar">Enviar</button>
+        <div id="sessionBtnEnviar">
+            <button id="btnEnviar">Enviar</button>
+        </div>
     </article>
     <footer>
         <div>

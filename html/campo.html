@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceSun</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/campo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/scrip.js"></script>
+    <!--<script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">-->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+</head>
+<body>
+    <header>
+        <span id="spnLogoNome">
+            <a  href="../index.html" id="lnkLogo">
+                <img class="logo" src="../img/logo.png" alt="">
+                <label class="nome">PlaceSun</label>    
+            </a>
+        </span>
+        <div id="drop" class="dropdown" onmouseenter="positionDropdown()">
+            <button class="dropbtn" >
+                <span id="burguer"class="material-symbols-outlined">menu </span>
+            </button>
+            <div id="itensDrop" class="dropdown-content">
+                <a href="campo.html">Campo</a>
+                <a href="cidade.html">Cidade</a>
+                <a href="natureza.html">Natureza</a>
+                <a href="contato.html">Contato</a>
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
+            </div>
+        </div>
+        <nav>
+            <a href="../html/campo.html">Campo</a>
+            <a href="../html/cidade.html">Cidade</a>
+            <a href="../html/natureza.html">Natureza</a>
+            <a href="../html/contato.html">Contato</a>
+        </nav>
+        <span id="spnBtnsLogin">
+            <button id="btnCadastrar">Sign Up</button>
+            <button id="btnEntrar">Login</button>
+        </span>
+    </header>
+    <article>
+        <div id="sessionCapa">
+            <span class="imgCapa" id="imgCapaCampo">
+                <span class="txtCapa">CAMPO</span>
+            </span>
+        </div>
+        <div id="sessionTituloLugar">Campo</div>
+        <div id="sessionInicioLugar">
+            <div id="sessionDescricao">Os lugares com campo oferecem uma escapada tranquila e rejuvenescedora da agitação da vida urbana, proporcionando uma conexão profunda com a natureza e uma oportunidade de respirar ar puro. Esses destinos encantadores são caracterizados por vastas extensões de terras verdes, paisagens pitorescas e uma atmosfera serena que convida os viajantes a desacelerar e apreciar os prazeres simples da vida.</div>
+            <input type="text" name="" id="inputPesquisaCidade" placeholder="Busque por uma cidade">
+        </div>
+        <div id="sessionTituloListagem">
+            <span>
+                <div id="sessionLugar">Os melhores lugares para você</div>
+                <div id="sessionDescricao">Os aventureiros querem saber mais histórias desses lugares!</div>
+                
+            </span>
+            <span id="spnBtnsLogin">
+                <a href="contato.html">
+                    <button id="btnEntrarContato">
+                        <span class="material-symbols-outlined" style="width: fit-content;font-size: 16px;">
+                        edit
+                        </span>
+                        Escreva uma avaliação
+                    </button>
+                </a>
+            </span>    
+        </div>
+        <div id="sessionListagem">
+            <!--<div id="itemLista">
+                <span id="itemImage">
+                    <img>
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"></label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao   "></div>
+                </span>
+            </div>-->
+            <div id="itemLista" class="campo ribeiraoPreto">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Bosque Zoológico Municipal Fábio Barreto.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Ribeirão Preto - SP, Brasil</label>
+                    <h5 id="itemNome">Bosque Zoológico Municipal Fábio Barreto</h5>
+                    <p id="itemDescricao">O Bosque Zoológico Municipal Fábio Barreto, localizado em Ribeirão Preto, São Paulo, é um espaço dedicado à conservação da fauna e flora e à educação ambiental. Situado em uma área de 25 hectares de vegetação nativa, o zoológico abriga diversas espécies de animais, incluindo mamíferos, aves e répteis, em ambientes que simulam seus habitats naturais. Além da observação de animais, o bosque conta com um Jardim Japonês, áreas de piquenique, playgrounds e trilhas para caminhadas, oferecendo lazer e descanso aos visitantes. Inaugurado em 1942, o zoológico promove atividades educativas e visitas guiadas, sensibilizando o público sobre a importância da preservação ambiental. Com sua combinação de lazer, educação e conservação, o Bosque Zoológico Fábio Barreto é um destino imperdível para quem visita Ribeirão Preto.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo brotas">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Eco Parque Jacaré.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Brotas - SP, Brasil</label>
+                    <h5 id="itemNome">Eco Parque Jacaré</h5>
+                    <p id="itemDescricao">O Eco Parque Jacaré, localizado em São Sebastião da Serra, Brotas, SP, é um destino ecoturístico que oferece uma combinação única de aventura, lazer e contato com a natureza. Situado em uma área de exuberante beleza natural, o parque conta com diversas atrações, como trilhas, tirolesas, arvorismo e atividades aquáticas em rios e cachoeiras. Ideal para famílias e aventureiros, o Eco Parque Jacaré proporciona experiências emocionantes e educativas, promovendo a conscientização ambiental e a preservação do meio ambiente. Além das atividades ao ar livre, o parque oferece infraestrutura de apoio, incluindo áreas de descanso, lanchonetes e espaços para piquenique. Com sua variedade de atrações e compromisso com a sustentabilidade, o Eco Parque Jacaré é um destino imperdível para quem visita Brotas.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Mirante - Pico do Jaraguá.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">São Paulo - SP, Brasil</label>
+                    <h5 id="itemNome">Mirante - Pico do Jaraguá</h5>
+                    <p id="itemDescricao">O Mirante do Pico do Jaraguá, localizado na Vila Jaraguá, São Paulo, SP, é um dos pontos mais altos da cidade, oferecendo vistas panorâmicas impressionantes da metrópole e seus arredores. Situado a 1.135 metros de altitude, o mirante é acessível por trilhas e uma estrada asfaltada, atraindo tanto caminhantes quanto ciclistas e motoristas. Parte do Parque Estadual do Jaraguá, a área é rica em biodiversidade, com várias espécies de fauna e flora nativas da Mata Atlântica. O local também conta com infraestrutura para visitantes, incluindo áreas de piquenique, estacionamento e lanchonetes. Além de proporcionar uma experiência visual única, o mirante é um excelente ponto para quem deseja fugir da agitação urbana e se reconectar com a natureza. Com sua combinação de beleza natural e facilidade de acesso, o Mirante do Pico do Jaraguá é um destino popular para moradores e turistas.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Mirante da Pedra Grande.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">São Paulo - SP, Brasil</label>
+                    <h5 id="itemNome">Mirante da Pedra Grande</h5>
+                    <p id="itemDescricao">O Mirante da Pedra Grande, localizado na Estrada da Chapada, no Horto Florestal de São Paulo, SP, é um destino popular que oferece vistas panorâmicas espetaculares da cidade e das áreas verdes circundantes. Situado a 1.010 metros de altitude, o mirante é acessível por uma trilha de cerca de 9 km (ida e volta), que atravessa a exuberante Mata Atlântica do Parque Estadual da Cantareira. O percurso é de nível moderado a desafiador, atraindo caminhantes, ciclistas e aventureiros em busca de uma experiência imersiva na natureza. No topo, os visitantes encontram uma ampla formação rochosa que serve como mirante natural, perfeito para apreciar o pôr do sol e a paisagem urbana. Com infraestrutura que inclui áreas de descanso e informações sobre a fauna e flora locais, o Mirante da Pedra Grande é um refúgio tranquilo e inspirador para quem deseja explorar a natureza e admirar a vista de São Paulo.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo analandia">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Mirante Vale das Pedras (Tanzânia).png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Analândia - SP, Brasil</label>
+                    <h5 id="itemNome">Mirante Vale das Pedras</h5>
+                    <p id="itemDescricao">
+                        O Mirante Vale das Pedras, também conhecido como Tanzânia, está localizado em Analândia, SP, e é um ponto turístico que oferece vistas panorâmicas impressionantes das formações rochosas e da vegetação exuberante da região. Situado em um local elevado, o mirante é acessível por trilhas que variam de nível moderado a difícil, atraindo caminhantes e aventureiros em busca de um contato mais próximo com a natureza. O cenário inclui imponentes paredes de pedra e uma vista deslumbrante do vale, proporcionando um ambiente ideal para a contemplação e fotografia. A área ao redor do mirante é rica em biodiversidade, com várias espécies de fauna e flora típicas do Cerrado. Além das vistas espetaculares, o local oferece infraestrutura básica para visitantes, como áreas de descanso e placas informativas. O Mirante Vale das Pedras é um destino imperdível para quem visita Analândia, proporcionando uma experiência única de beleza natural e tranquilidade.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo barraDoTurvo">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Mosaico de Unidades de Conservação do Jacupiranga.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Barra do Turvo - SP, Brasil</label>
+                    <h5 id="itemNome">Mosaico de Unidades de Conservação do Jacupiranga</h5>
+                    <p id="itemDescricao">O Mosaico de Unidades de Conservação do Jacupiranga, localizado em Barra do Turvo, SP, é uma vasta área protegida que abrange diversas unidades de conservação, incluindo parques estaduais, reservas e áreas de proteção ambiental. Com uma rica biodiversidade, o mosaico abriga uma variedade de ecossistemas, como Mata Atlântica, rios, cachoeiras e cavernas, proporcionando um refúgio para inúmeras espécies de flora e fauna. A região oferece diversas atividades para os visitantes, como trilhas ecológicas, observação de aves, passeios de barco e visitas a comunidades tradicionais, promovendo o ecoturismo e a conscientização ambiental. O Mosaico do Jacupiranga também desempenha um papel crucial na preservação dos recursos hídricos e na manutenção dos serviços ecossistêmicos essenciais para a região. Com sua combinação de beleza natural e importância ecológica, o Mosaico de Unidades de Conservação do Jacupiranga é um destino imperdível para amantes da natureza e aventureiros em busca de experiências autênticas e sustentáveis.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo itatiba">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Museu de História Natural Zooparque Itatiba.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Itatiba - SP, Brasil</label>
+                    <h5 id="itemNome">Museu de História Natural Zooparque Itatiba</h5>
+                    <p id="itemDescricao">O Museu de História Natural Zooparque Itatiba, localizado em Itatiba, SP, é uma instituição dedicada à preservação e educação sobre a biodiversidade e a história natural. Integrado ao Zooparque Itatiba, o maior zoológico privado do Brasil, o museu exibe uma vasta coleção de espécimes taxidermizados, fósseis, minerais e exposições interativas que ilustram a evolução da vida na Terra. Os visitantes podem explorar diversas seções temáticas que abordam desde a era dos dinossauros até a fauna contemporânea, proporcionando uma experiência educativa e fascinante para todas as idades. Além das exposições permanentes, o museu promove atividades educativas, oficinas e programas de conservação, reforçando seu compromisso com a conscientização ambiental. Com sua combinação de educação e entretenimento, o Museu de História Natural Zooparque Itatiba é um destino imperdível para famílias, estudantes e entusiastas da natureza.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo americana">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Parque Ecológico de Americana.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Americana - SP, Brasil</label>
+                    <h5 id="itemNome">Parque Ecológico de Americana</h5>
+                    <p id="itemDescricao">
+                        O Parque Ecológico de Americana, localizado na Av. Brasil, 2525, no bairro Jardim Ipiranga, em Americana, SP, é um espaço verde dedicado ao lazer, educação ambiental e preservação da biodiversidade. Com uma área de aproximadamente 120 mil m², o parque oferece uma série de atrativos, incluindo trilhas ecológicas, lagos, áreas de convivência, playgrounds e espaços para prática esportiva. O parque também abriga o Museu de História Natural, que apresenta exposições sobre a fauna, flora e geologia da região, além de promover atividades educativas para escolas e grupos. Com sua infraestrutura completa e programação diversificada, o Parque Ecológico de Americana é um ponto de encontro ideal para famílias, estudantes e amantes da natureza que desejam desfrutar de um ambiente natural e educativo em Americana.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Parque Estadual Cantareira - Núcleo Pedra Grande.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">São Paulo - SP, Brasil</label>
+                    <h5 id="itemNome">Parque Estadual Cantareira</h5>
+                    <p id="itemDescricao">
+                        O Parque Estadual da Cantareira - Núcleo Engordador, localizado no bairro Jardim Cachoeira, em São Paulo, SP, é uma reserva natural de grande importância ecológica e histórica. Parte do Sistema Nacional de Unidades de Conservação (SNUC), o parque oferece aos visitantes uma experiência única em meio à Mata Atlântica preservada. Com trilhas que variam de níveis fácil a difícil, o Núcleo Engordador é ideal para atividades como caminhadas, observação de aves e contato direto com a natureza. O parque também possui infraestrutura para visitantes, incluindo áreas de descanso, banheiros e um centro de visitantes com informações sobre a fauna, flora e história da região. Como um importante refúgio verde dentro da metrópole, o Parque Estadual da Cantareira - Núcleo Engordador é um local privilegiado para aqueles que buscam relaxamento, aventura e educação ambiental em São Paulo.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo barraDoTurvo">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Parque Estadual do Rio Turvo.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Barra do Turvo - SP, Brasil</label>
+                    <h5 id="itemNome">Parque Estadual do Rio Turvo</h5>
+                    <p id="itemDescricao">O Parque Estadual do Rio Turvo, localizado às margens da BR-116, em Barra do Turvo, SP, é uma área protegida que abrange uma diversidade de ecossistemas típicos da Mata Atlântica. Este parque é conhecido pela sua rica biodiversidade, incluindo espécies ameaçadas de fauna e flora, e pela preservação de importantes recursos hídricos da região. Com trilhas que oferecem vistas panorâmicas, cachoeiras e riachos cristalinos, o parque proporciona uma experiência única para os amantes da natureza e entusiastas de ecoturismo. Além das atividades ao ar livre, o Parque Estadual do Rio Turvo promove a educação ambiental através de programas educativos e de conscientização sobre a conservação dos recursos naturais. É um destino ideal para quem busca explorar e aprender sobre os ecossistemas naturais do estado de São Paulo.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo cananeia">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Parque Estadual Lagamar de Cananéia.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Cananéia - SP, Brasil</label>
+                    <h5 id="itemNome">Parque Estadual Lagamar de Cananéia</h5>
+                    <p id="itemDescricao">O Parque Estadual Lagamar de Cananéia, situado na Avenida Professor Wladimir Besnard, no Morro São João, em Cananéia, SP, é uma importante reserva natural que protege ecossistemas de manguezais, restingas e áreas alagadas. Este parque abrange uma extensa área de preservação ambiental na região de Lagamar, oferecendo aos visitantes uma oportunidade única de explorar a biodiversidade costeira da Mata Atlântica. Com trilhas ecológicas que levam a paisagens deslumbrantes, o parque é ideal para atividades como observação de aves, estudo da flora nativa e educação ambiental. Além das áreas naturais, o Parque Estadual Lagamar de Cananéia promove a conscientização sobre a conservação marinha e costeira, contribuindo para a sustentabilidade e o turismo responsável na região.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo ribeiraoPreto">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Parque Municipal Dr. Luis Carlos Raya.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Ribeirão Preto - SP, Brasil</label>
+                    <h5 id="itemNome">Parque Municipal Dr. Luis Carlos Raya</h5>
+                    <p id="itemDescricao">
+                        O Parque Municipal Dr. Luís Carlos Raya, localizado na Rua Severiano Amaro dos Santos, no bairro Jardim Botânico, em Ribeirão Preto, SP, é uma área verde urbana dedicada ao lazer, educação ambiental e preservação da flora local. Com uma extensão de aproximadamente 52 hectares, o parque oferece uma variedade de atrativos, incluindo trilhas para caminhadas, ciclovias, áreas de recreação infantil, quadras esportivas e espaços para eventos culturais e educativos. Além da diversidade de vegetação, que inclui espécies nativas e exóticas, o parque também abriga o Museu de Entomologia "Orimar Batista Mariani", que possui uma coleção significativa de insetos e outros artrópodes. O Parque Dr. Luís Carlos Raya é um refúgio verde no coração de Ribeirão Preto, ideal para momentos de relaxamento ao ar livre e para aprender sobre a biodiversidade local.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo araraquara">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Parque Natural Municipal do Basalto.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Araraquara - SP, Brasil</label>
+                    <h5 id="itemNome">Parque Natural Municipal do Basalto</h5>
+                    <p id="itemDescricao">O Parque Natural Municipal do Basalto, localizado no bairro Jardim Pinheiros (Vila Xavier), em Araraquara, SP, é uma área de preservação ambiental que se destaca pela beleza natural e pela importância geológica da região. Este parque abrange formações de basalto e oferece aos visitantes trilhas ecológicas que exploram a vegetação típica do Cerrado e áreas de mata ciliar ao redor de riachos e nascentes. Além das atividades de ecoturismo, como caminhadas e observação da fauna e flora local, o parque também é um espaço para educação ambiental, promovendo a conscientização sobre a importância da conservação dos recursos naturais e da preservação dos ecossistemas da região. O Parque Natural Municipal do Basalto é um ambiente ideal para quem busca conexão com a natureza e aprendizado sobre a geologia e biodiversidade do interior paulista.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo araraquara">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Parque Pinheirinho.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Araraquara - SP, Brasil</label>
+                    <h5 id="itemNome">Parque Pinheirinho</h5>
+                    <p id="itemDescricao">O Parque Pinheirinho, localizado em Araraquara, SP, é uma área verde urbana que oferece diversas opções de lazer e contato com a natureza. Com uma extensão de aproximadamente 87 hectares, o parque é conhecido por suas amplas áreas verdes, trilhas para caminhadas, espaços para prática de esportes, como quadras poliesportivas e campos de futebol, e playgrounds para crianças. Além das atividades ao ar livre, o Parque Pinheirinho possui infraestrutura para eventos culturais e educativos, como festivais, feiras e apresentações artísticas. É um local muito frequentado pela comunidade local e visitantes que buscam momentos de relaxamento e diversão em meio à natureza, no coração de Araraquara.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo bauru">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Parque Zoológico Municipal de Bauru.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Bauru - SP, Brasil</label>
+                    <h5 id="itemNome">Parque Zoológico Municipal de Bauru</h5>
+                    <p id="itemDescricao">O Parque Zoológico Municipal de Bauru, localizado na cidade de Bauru, SP, é uma importante instituição dedicada à conservação da fauna e à educação ambiental. Fundado em 1980, o zoológico abriga uma variedade de animais nativos e exóticos, proporcionando um ambiente adequado para seu bem-estar e reprodução. Entre as principais atrações estão espécies como leões, tigres, elefantes, aves tropicais e répteis. Além da observação dos animais, o zoológico oferece atividades educativas, como palestras e visitas guiadas, focadas na conscientização sobre conservação ambiental e preservação da biodiversidade. Com sua infraestrutura de passeios, áreas de recreação e iniciativas educativas, o Parque Zoológico Municipal de Bauru é um destino educativo e recreativo para toda a família.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo piracaia">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Pedra do Carmo.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Piracaia - SP, Brasil</label>
+                    <h5 id="itemNome">Pedra do Carmo</h5>
+                    <p id="itemDescricao">
+                        A Pedra do Carmo, localizada em Piracaia, SP, é um ponto turístico conhecido pela sua imponente formação rochosa e pelas vistas panorâmicas que oferece da região. Com uma altitude de aproximadamente 1.500 metros, a Pedra do Carmo atrai visitantes em busca de atividades de ecoturismo, como trilhas e escaladas, que levam até o topo, onde se pode apreciar uma paisagem deslumbrante que inclui a represa de Piracaia e a vasta vegetação da Serra da Mantiqueira. Além das atividades ao ar livre, a área é rica em biodiversidade, proporcionando oportunidades para observação de aves e contemplação da natureza. A Pedra do Carmo é um destino popular para quem deseja explorar e apreciar a beleza natural da região de Piracaia.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/trilha_pedra_grande.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">São Paulo - SP, Brasil</label>
+                    <h5 id="itemNome">Trilha da Pedra Grande</h5>
+                    <p id="itemDescricao">Localizada no Parque Estadual da Serra da Cantareira, a Trilha da Pedra Grande oferece uma experiência de trekking emocionante com vistas panorâmicas deslumbrantes. Com aproximadamente 9 km de extensão (ida e volta), a trilha leva os visitantes até o topo da Pedra Grande, um dos pontos mais altos da região, com cerca de 1.010 metros de altitude.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="campo piracicaba">
+                <span id="itemImage">
+                    <img src="../img/lugares/campo/Zoológico Municipal de Piracicaba.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Piracicaba - SP, Brasil</label>
+                    <h5 id="itemNome">Zoológico Municipal de Piracicaba</h5>
+                    <p id="itemDescricao">O Zoológico Municipal de Piracicaba, localizado na cidade de Piracicaba, SP, é um espaço dedicado à conservação da fauna e à educação ambiental. Fundado em 1976, o zoológico abriga uma variedade de espécies de animais, tanto nativas quanto exóticas, em ambientes que procuram replicar seus habitats naturais. Os visitantes podem observar animais como leões, tigres, elefantes, aves tropicais, répteis e uma diversidade de espécies de mamíferos e peixes.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div id="sessionNumPage"></div>
+    </article>
+    <footer>
+        <div>
+            <div class="nome">PlaceSun</div>
+            <img class="logo" src="../img/logo.png" alt="">
+        </div>
+        <div style="color: #fff;">© 2024 PlaceSun. Todos os direitos reservados.</div>
+    </footer>
+</body>
+</html>

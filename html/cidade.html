@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaceSun</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/campo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/scrip.js"></script>
+    <!--<script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">-->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <span id="spnLogoNome">
+            <a  href="../index.html" id="lnkLogo">
+                <img class="logo" src="../img/logo.png" alt="">
+                <label class="nome">PlaceSun</label>    
+            </a>
+        </span>
+        <div id="drop" class="dropdown" onmouseenter="positionDropdown()">
+            <button class="dropbtn" >
+                <span id="burguer"class="material-symbols-outlined">menu </span>
+            </button>
+            <div id="itensDrop" class="dropdown-content">
+                <a href="campo.html">Campo</a>
+                <a href="cidade.html">Cidade</a>
+                <a href="natureza.html">Natureza</a>
+                <a href="contato.html">Contato</a>
+                <a href="">Login</a>
+                <a href="">Sign Up</a>
+
+            </div>
+        </div>
+        <nav>
+            <a href="../html/campo.html">Campo</a>
+            <a href="../html/cidade.html">Cidade</a>
+            <a href="../html/natureza.html">Natureza</a>
+            <a href="../html/contato.html">Contato</a>
+        </nav>
+        <span id="spnBtnsLogin">
+            <button id="btnCadastrar">Sign Up</button>
+            <button id="btnEntrar">Login</button>
+        </span>
+    </header>
+    <article>
+        <div id="sessionCapa">
+            <span class="imgCapa" id="imgCapaCidade">
+                <span class="txtCapa">CIDADE</span>
+            </span>
+        </div>
+        <div id="sessionTituloLugar">Cidade</div>
+        <div id="sessionInicioLugar">
+            <div id="sessionDescricao">Os lugares na cidade oferecem uma mistura vibrante de cultura, história e atividades emocionantes, proporcionando aos visitantes uma experiência dinâmica e estimulante. Esses destinos cosmopolitas são conhecidos por sua diversidade, energia contagiante e uma infinidade de opções para explorar e descobrir.</div>
+            <input type="text" name="" id="inputPesquisaCidade" placeholder="Busque por uma cidade">
+        </div>
+        <div id="sessionTituloListagem">
+            <span>
+                <div id="sessionLugar">Os melhores lugares para você</div>
+                <div id="sessionDescricao">Os aventureiros querem saber mais histórias desses lugares!</div>
+                
+            </span>
+            <span id="spnBtnsLogin">
+                <a href="contato.html">
+                    <button id="btnEntrarContato">
+                        <span class="material-symbols-outlined" style="width: fit-content;font-size: 16px;">
+                        edit
+                        </span>
+                        Escreva uma avaliação
+                    </button>
+                </a>
+            </span>    
+        </div>
+        <div id="sessionListagem">
+            <!--<div id="itemLista">
+                <span id="itemImage">
+                    <img>
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"></label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao   "></div>
+                </span>
+            </div>-->
+            <div id="itemLista" class="cidade adamantina">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/Biblioteca Municipal de Adamantina.png" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado">Adamantina - SP, Brasil</label>
+                    <h5 id="itemNome">Biblioteca Municipal de Adamantina</h5>
+                    <p id="itemDescricao">A Biblioteca Municipal de Adamantina, situada na cidade de Adamantina, SP, é um centro cultural essencial para a comunidade local. Fundada para promover o acesso à informação e à cultura, oferece um extenso acervo de livros, periódicos e recursos digitais para todos os públicos. Além de empréstimos de materiais, a biblioteca realiza eventos como palestras, workshops e clubes de leitura, incentivando o hábito da leitura e o aprendizado contínuo. Também serve como espaço para exposições artísticas e encontros com autores, enriquecendo a vida cultural da cidade. Com seu papel crucial na promoção da educação e no fortalecimento da comunidade, a Biblioteca Municipal de Adamantina desempenha um papel fundamental ao oferecer um ambiente acolhedor e enriquecedor para o desenvolvimento intelectual e cultural dos cidadãos.</p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+            <div id="itemLista" class="cidade saoPaulo">
+                <span id="itemImage">
+                    <img src="../img/lugares/cidade/" alt="">
+                </span>
+                <span id="itemInfo">
+                    <label id="itemCidEstado"> - SP, Brasil</label>
+                    <h5 id="itemNome"></h5>
+                    <p id="itemDescricao"></p>
+                    <div class="itemAvaliacao">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div id="sessionNumPage"></div>
+    </article>
+    <footer>
+        <div>
+            <div class="nome">PlaceSun</div>
+            <img class="logo" src="../img/logo.png" alt="">
+        </div>
+        <div style="color: #fff;">© 2024 PlaceSun. Todos os direitos reservados.</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@media screen and (max-width: 600px){
+    .txtCapa{
+        font-size: 90px;
+    }
+    #sessionTituloLugar{
+        font-size: 70px;
+    }
+    #itemLista{
+        flex-wrap: wrap;
+    }
+    #sessionDescricao{
+        font-size: medium;
+    }
+    
+    #itemInfo *{
+        font-size: medium;
+    }
+    #itemNome{
+        font-size: xx-large
+    }
+}
+@media screen and (min-width: 601px){
+    .txtCapa{
+        font-size: 180px;
+    }
+    #sessionTituloLugar{
+        font-size: 110px;
+    }
+
+    #itemInfo *{
+        font-size: 20px;
+    }
+    #itemNome{
+        font-size: 40px
+    }
+}
+
+#imgCapaCampo{
+    background-image: url(../img/campo-capa.jpg);
+}
+#imgCapaCidade{
+    background-image: url(../img/cidade-capa.jpg);
+}
+#imgCapaNatureza{
+    background-image: url(../img/natureza-capa.jpg);
+}
+.imgCapa{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sessionCapa{
+    display: flex;
+    height: 100vh;
+}
+.txtCapa{
+    color: #ffffff00;
+    -webkit-text-stroke: 1px white;
+    font-weight: 900;
+}
+#sessionTituloLugar{
+    color: #005F15;
+    font-weight: 700;
+    text-align: center;
+}
+#sessionInicioLugar{
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4% 20%;
+}
+#sessionLugar{
+    font-weight: 700;
+    padding: 1% 6%;
+}
+#inputPesquisaCidade{
+    margin: 4% 10%;
+}
+#sessionTituloListagem{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+#sessionTituloListagem span{
+    width: 100%;
+}
+#btnEntrarContato{
+    color: #005F15;
+    border: 1px #005F15 solid;
+    background-color: #ffffff00;
+}
+#btnEntrarContato:hover{
+    cursor: pointer;
+}
+#itemLista{
+    display: flex;
+}
+#itemImage{
+    padding: 3.5%;
+}
+#itemImage img{
+    width: 400px;
+}
+#itemInfo{
+    padding: 3.5%;
+}
+#itemInfo *{
+    padding: 2%;
+}
+#itemNome{
+    font-weight: 600;
+}
+.itemAvaliacao{
+    font-size: 24px;
+    color: #005F15;
+}
