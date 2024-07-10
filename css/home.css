@@ -90,8 +90,8 @@
 }
 
 #imgHomeCampo{
-    background-image: url(../img/campo-home.webp);
-    filter: alpha(opacity=60);
+    background-image: url(../img/campo-home.jpg);
+    background-size: cover;
 }
 
 
@@ -108,10 +108,12 @@
 .txtHome{
     padding: 10%;
     font-size: 42px;
+    width: 70%;
 }
 
 .imgSeta{
     padding: 10%;
+    width: 30%;
 }
 #sessionCard{
     width: 100%;
