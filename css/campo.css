@@ -12,11 +12,14 @@
         font-size: medium;
     }
     
-    #itemInfo *{
+    #itemInfo *:not(.material-symbols-outlined, #itemNome){
         font-size: medium;
     }
     #itemNome{
         font-size: xx-large
+    }
+    #itemImage img{
+        width: 320px;
     }
 }
 @media screen and (min-width: 601px){
@@ -27,11 +30,14 @@
         font-size: 110px;
     }
 
-    #itemInfo *{
+    #itemInfo *:not(.material-symbols-outlined, #itemNome){
         font-size: 20px;
     }
     #itemNome{
         font-size: 40px
+    }
+    #itemImage img{
+        width: 400px;
     }
 }
 
@@ -105,9 +111,7 @@
 #itemImage{
     padding: 3.5%;
 }
-#itemImage img{
-    width: 400px;
-}
+
 #itemInfo{
     padding: 3.5%;
 }
